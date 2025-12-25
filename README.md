@@ -95,19 +95,19 @@ Working towards building the awesome Netflix platform (it will not be complete t
 8. File structure:
 - We normally have the first thing at top of every HTML file document:
 
-``
+```
 <!DOCTYPE html>
-``
+```
 - Tells the browser we are using the HTML5 file
-``
+```
 <html>
-``
+```
 - tells the Browser that only the HTML is written in between these.
 - kind of redundant, but it acts as the root of the Doc.
 
-``
+```
 <head>
-``
+```
 - Not visible to the Browser.
 - Contains the Meta tags with essential informations.
 - If you want to link to the style sheet file, you can add it through the head section using link tag, `<link>`
@@ -115,16 +115,16 @@ Working towards building the awesome Netflix platform (it will not be complete t
  + ``<title>``
  + The title tag is within the head, it is the tab page heading/title.ss
 
-``
+```
 <body>
-``
+```
 - Where all the content goes, like headings, paragraphs, main sections, and etc.
 
 9. **Headings & Paragraphs**
 
 - Headings denote the hierarchy & page structure.
 - Only have 6 levels of headings:
- + <h1>, <h2>, <h3>, <h4>, <h5> & <h6> 
+ + `<h1>, <h2>, <h3>, <h4>, <h5> & <h6> `
 
 - Paragraphs are really simple opposed to headings.
 - They are regular text we use
@@ -133,31 +133,31 @@ Working towards building the awesome Netflix platform (it will not be complete t
 
 10. **Strong vs Em**
 
-``
+```
 <strong>
-``
+```
 - Write **bold** text in the browser
 - Strong importance - tells the browser that there's a really import text in this element between the tag `<strong></strong>`.
 -  It is not advisable to use `<b></b>`, it does tell the Browser you are using a strong text. Good practice use `<strong>`
 
-``
+```
 <em>
-``
+```
 - Write *italic* text in the browser.
 - Emphasis on the certain text in between `<em></em>`
 
 11. **The Anchor element**
 
-- <a> is short for anchor
+- `<a>` is short for anchor
 - Used to link:
  + To link to a different location on the current page.
  + or to another page.
 
 - E.g.:
 
-``
+```
 <a>Sign in</a>
-``
+```
 
 - **How will the browser know where to redirect when this element is clicked on?** We need to understand the elements' attributes.
 
@@ -185,7 +185,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - Pointing to files in locally - in the project.
 - Visit about us page:
  + `<a href="./about-us.html">About Us</a>`
- + `<img src="./assets/bgimage.png" alt="">
+ + `<img src="./assets/bgimage.png" alt="">`
  + Above is how to create an image - pointing to a local file i.e. **Relative Path** 
 - Create a CONTACT US page, link it in the Home page pointing to Contact Us page - That's how you use **Relative Path**
 
