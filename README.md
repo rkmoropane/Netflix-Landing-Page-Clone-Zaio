@@ -202,7 +202,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - In the `<a>` href attribute use the `#` to point to an id of different element in order to move to that different element in the same editor.
 
 - e.g.
-`
+
 ```
 <a href="#redirect_Section">POINT TO A DIFFERENT SECTION</a>
 .
@@ -214,4 +214,21 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - You can always point to the different part on the same page using this anchor tag with `href="#"` and the added id of that element.
 
 
-16. 
+16. Add images to the HTML pages.
+- Similar to `<a>` the image element requires an attribute to work, 
+- It uses the `src` - short for source
+- Image tag is self-closing tag.
+ + `<img src="./assets/bgimage.png" alt="">`
+
+- File paths - can be relative or from online similar to `<a>`
+ + Relative Path: `<img src="https://www.link.com" alt="">`
+ + Absoluete Path: `<img src="./assets/bgimage.png" alt="">`
+
+17. What does the alt attribute do? 
+- Images are not valid without the `alt` attribute.
+- `Alt` attribute is used to describe the image.
+- `Alt` attribute describe the intent of the image:
+ + Can be empty string
+ + `<img src="./assets/bgimage.jpg" alt="Netflix Cover Image">`
+
+18. 
