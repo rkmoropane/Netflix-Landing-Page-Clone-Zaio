@@ -145,3 +145,52 @@ Working towards building the awesome Netflix platform (it will not be complete t
 ``
 - Write *italic* text in the browser.
 - Emphasis on the certain text in between `<em></em>`
+
+11. **The Anchor element**
+
+- <a> is short for anchor
+- Used to link:
+ + To link to a different location on the current page.
+ + or to another page.
+
+- E.g.:
+
+``
+<a>Sign in</a>
+``
+
+- **How will the browser know where to redirect when this element is clicked on?** We need to understand the elements' attributes.
+
+12. Elements can have attributes:
+
+- Are always given within the opening tag.
+- Gives extra info:
+ + Where link goes...
+ + Or location of the image.
+
+- Written as follows:
+ + `<a href="https://www.netflix.com/ke-en/login">Sign In</a>`
+ + Attributes are always follwed by an equal sign '=' and "" quotes marks containing info for the attribute.
+
+- A link won't work without the **`href`** attribute.
+- Also won't without the **`http://`** or **`https://`** if external:
+ + This let's the browser know that the link is an external website.
+ + This is also known as **Absolute Path**.
+ + `<a href="https://www.netflix.com/ke-en/login">Sign In</a>`
+
+- **Relative Path**: Like Absolute Path where we can specify the external website, we can also point to files in our project called Relative path.
+
+13. **Relative Path**:
+
+- Pointing to files in locally - in the project.
+- Visit about us page:
+ + `<a href="./about-us.html">About Us</a>`
+ + `<img src="./assets/bgimage.png" alt="">
+ + Above is how to create an image - pointing to a local file i.e. **Relative Path** 
+- Create a CONTACT US page, link it in the Home page pointing to Contact Us page - That's how you use **Relative Path**
+
+14. Opening in a new tab: **Target attribute**:
+
+- Use the `target="_blank"` attribute within the opening tag of the anchor tag <a> to open in a new tab.
+ + `<a href="./about-us.html" target="_blank">About Us</a>`
+- `https://www.w3schools.com/tags/att_a_target.asp`
