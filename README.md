@@ -202,13 +202,14 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - In the `<a>` href attribute use the `#` to point to an id of different element in order to move to that different element in the same editor.
 
 - e.g.
-``
+`
+```
 <a href="#redirect_Section">POINT TO A DIFFERENT SECTION</a>
 .
 .
 .
 <h1 id="redirect_section">TEST 2 REDIRECTION SECTION</h1>
-``
+```
 
 - You can always point to the different part on the same page using this anchor tag with `href="#"` and the added id of that element.
 
