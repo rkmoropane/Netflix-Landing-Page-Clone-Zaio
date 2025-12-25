@@ -120,3 +120,8 @@ Working towards building the awesome Netflix platform (it will not be complete t
 ``
 - Where all the content goes, like headings, paragraphs, main sections, and etc.
 
+9. Headings.
+
+- Headings denote the hierarchy & page structure.
+- Only have 6 levels of headings:
+ + <h1>, <h2>, <h3>, <h4>, <h5> & <h6> 
