@@ -120,8 +120,28 @@ Working towards building the awesome Netflix platform (it will not be complete t
 ``
 - Where all the content goes, like headings, paragraphs, main sections, and etc.
 
-9. Headings.
+9. **Headings & Paragraphs**
 
 - Headings denote the hierarchy & page structure.
 - Only have 6 levels of headings:
  + <h1>, <h2>, <h3>, <h4>, <h5> & <h6> 
+
+- Paragraphs are really simple opposed to headings.
+- They are regular text we use
+- use the tag: `<p>`
+- Not numbered like headings, only the `<p>` tag.
+
+10. **Strong vs Em**
+
+``
+<strong>
+``
+- Write **bold** text in the browser
+- Strong importance - tells the browser that there's a really import text in this element between the tag `<strong></strong>`.
+-  It is not advisable to use `<b></b>`, it does tell the Browser you are using a strong text. Good practice use `<strong>`
+
+``
+<em>
+``
+- Write *italic* text in the browser.
+- Emphasis on the certain text in between `<em></em>`
