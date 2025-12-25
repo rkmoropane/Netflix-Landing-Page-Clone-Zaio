@@ -59,4 +59,64 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - Have VS Code setup installed [x]
 - Have Live Server extension installed in VS Code [x]
 
-6. 
+6. **HTML Book Analogy**
+
+- Tells the browser exactly what the content we are writing.
+- Consists of:
+ + Headings, Paragraphs,
+ + Bold, italics fonts, using links to allow redirection or open other pages,
+ + The NavBar at the top of the page, the footer,
+ + The main content.
+- We will be creating the netflix landing page: `https://www.netflix.com/za/`
+- Basic Syntax:'Tags' - everything is wrapped in "tags" to tell the Browser what is what. Using opening tags & closing tags. All these together becomes an element. e.g.:
+ + Heading == `<h1>Some heading text</h1>`, 
+ + Paragraph == `<p>Some paragraph text</p>`,
+ + Main section == `<main>Some Main section Content text</main>`
+ + NavBar section == `<nav>Some navbar context(usual in divided sections)</nav>`
+ + Div tags == `<div>Some divided contexts(for better arrangement of context in each sections)</div>`. ETC...
+- Within each tags, we can have level of nesting either within other elements or outside elements.
+- Tags: `<> </>`
+- Opening tags: `<>`
+- Closing tags: `</>`
+- Everything from opening to closing tags is an element.
+- Elements define our content in the Browser - `<p>` this is paragraph, `<h1>` this is heading, etc.
+
+7. **File Naming Conventions & File organizing:** Stick to same consistance of these so that you follow good practices in the Web Development Industries.
+
+- Sstick to lowercase for naming files,
+- Make the names shorter,
+- Have descriptive naming - `profile.html` not 'page1.html`, etc.
+- Use underscores or hyphens instead of 2 words merged. e.g. `about-us.html`. No Capital letters like - `AboutUs.html`, wrong this one. No spaces.
+- Main folder is the root folder.
+- the `index.html` is normally what is used for the home or root file. Thus it's in the root folder, not sub folders.
+- Can put pages into sub folders.
+- Assets folders for images
+
+8. File structure:
+- We normally have the first thing at top of every HTML file document:
+
+``
+<!DOCTYPE html>
+``
+- Tells the browser we are using the HTML5 file
+``
+<html>
+``
+- tells the Browser that only the HTML is written in between these.
+- kind of redundant, but it acts as the root of the Doc.
+
+``
+<head>
+``
+- Not visible to the Browser.
+- Contains the Meta tags with essential informations.
+- If you want to link to the style sheet file, you can add it through the head section using link tag, `<link>`
+- Hidden but really important and controlling - like a brain:
+ + ``<title>``
+ + The title tag is within the head, it is the tab page heading/title.ss
+
+``
+<body>
+``
+- Where all the content goes, like headings, paragraphs, main sections, and etc.
+
