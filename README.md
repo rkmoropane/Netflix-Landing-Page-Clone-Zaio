@@ -52,3 +52,11 @@ Working towards building the awesome Netflix platform (it will not be complete t
 
 - Ashkil will be coding something in the interactive coding environment, pushing each time. I just have to pull into my VS code environment and make pushes each time.
 - Practice n Practice, pull the changes and make your hands dirty everytime.
+
+5. Let's get setup:
+
+- Have google Chrome setup installed [x]
+- Have VS Code setup installed [x]
+- Have Live Server extension installed in VS Code [x]
+
+6. 
