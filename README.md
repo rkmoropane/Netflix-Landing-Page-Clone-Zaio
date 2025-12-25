@@ -194,3 +194,23 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - Use the `target="_blank"` attribute within the opening tag of the anchor tag <a> to open in a new tab.
  + `<a href="./about-us.html" target="_blank">About Us</a>`
 - `https://www.w3schools.com/tags/att_a_target.asp`
+
+15. Redirecting to a different part on the same page: Anchor tag - position on same page.
+
+- Move cursor to a different element on the code editor.
+
+- In the `<a>` href attribute use the `#` to point to an id of different element in order to move to that different element in the same editor.
+
+- e.g.
+``
+<a href="#redirect_Section">POINT TO A DIFFERENT SECTION</a>
+.
+.
+.
+<h1 id="redirect_section">TEST 2 REDIRECTION SECTION</h1>
+``
+
+- You can always point to the different part on the same page using this anchor tag with `href="#"` and the added id of that element.
+
+
+16. 
