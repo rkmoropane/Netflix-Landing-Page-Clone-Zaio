@@ -250,3 +250,19 @@ Working towards building the awesome Netflix platform (it will not be complete t
     <li></li>
 </ol>
 ```
+
+19. Div tags:
+- Div stands for division.
+- Used to Divide content into sections
+-  The reason we might divide the content into section is so that we can style these divided content into different styling.
+
+20. The Layout Elements:
+
+- Header
+- Nav
+- Section:
+ + Main: Article
+ + Aside
+- Footer
+- We can actually give the direct meaning to our sections e.g. `<footer></footer>` to make the Browser understand that the page has footer element.
+- 
