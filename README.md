@@ -231,4 +231,22 @@ Working towards building the awesome Netflix platform (it will not be complete t
  + Can be empty string
  + `<img src="./assets/bgimage.jpg" alt="Netflix Cover Image">`
 
-18. 
+18. Lists:
+
+- What are lists 
+ + Regular bulleted or numbered lists.
+ + Navigations
+ + Organizing other
+
+- Types of lists:
++ Ordered lists `<ol>`
++ Unordered lists `<ul>`
+- Each list has a list item:
+
+```
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+```
