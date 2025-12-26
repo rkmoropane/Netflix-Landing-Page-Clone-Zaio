@@ -306,3 +306,63 @@ form elements
     </form>
 ```
 - You can add a newline(next line) using the following tag: `<br>`
+
+23. Labels & Textarea:
+**Label**
+- For an input, you have to add the attribute name in case of radio type, so that they refer to the radio input, if one is selected the other is unselected.
+e.g.:
+
+```
+    <form action="">
+        <h1>LOGIN FORM</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <br>
+        <input type="radio" id="Female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="Male" name="gender" value="male">
+        <label for="female">Male</label><br>
+        <input type="radio" id="Other" name="gender" value="other">
+        <label for="other">other</label><br>
+        <button>LOGIN</button>
+    </form>
+```
+- For an input, you can add the different atttribute name in case of checkbox type, you can selected more than one different value of this input type - You can different options that is how checkbox are used.
+
+```
+    <form action="">
+        <h1>LOGIN FORM</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <br>
+        <input type="checkbox" id="Female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="checkbox" id="Male" name="gender" value="male">
+        <label for="female">Male</label><br>
+        <input type="checkbox" id="Other" name="gender" value="other">
+        <label for="other">other</label><br>
+        <button>LOGIN</button>
+    </form>
+```
+**Textarea**
+- For description open text, you cannot use input tag, use the textarea tag - this you can add more text for description input that user needs to submit.
+
+e.g:
+```
+    <form>
+        <h1>LOGON FORM</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <button>LOGIN</button>
+    </form>
+```
