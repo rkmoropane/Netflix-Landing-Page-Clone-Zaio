@@ -266,3 +266,43 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - Footer
 - We can actually give the direct meaning to our sections e.g. `<footer></footer>` to make the Browser understand that the page has footer element.
 - 
+
+21. HTML Form Element: Taking user data using input tags.
+- Is used collect the user input.
+- User input is most often sent to the server for a processing.
+- `<form>` is used to create an HTML form for the user:
+ + input
+```
+<form>
+.
+form elements
+.
+<form>
+```
+
+22. Form elements - A real world example: Login Form.
+```
+- <label>
+- <select>
+- <textarea>
+```
+
+- `<button type="button">Click Me!</button>`
+- To create input for user, use the input tag: `<input type="text" id="username" name="username">`, there are many types you can give to your input tag, text, or passsword and etc. It depends what you wanna give it.
+- We can always give our input a label, `<label for="username">Username</label>` this is just used for labelling your user input.
+- E.g.: Real world example - Login Form.
+```
+    <form action="">
+        <h1>LOGIN FORM</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <label for="gender">Female</label>
+        <input type="radio" id="female" name="female" value="Female">
+        <label for="gender">Male</label>
+        <input type="radio" id="male" name="male" value="Male">
+    <button>LOGIN</button>
+    </form>
+```
+- You can add a newline(next line) using the following tag: `<br>`
