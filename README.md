@@ -382,3 +382,9 @@ e.g.:
 </form>
 ```
 
+24. Buttons element:
+- the `<button>` defines a clickable button.
+- Inside a `<button>` element you can put the text (And Tags like, `<i>`, `<strong>`, `<img>`, `<br>`, `<em>`). This is not possible with the button created with the `<input>` element.
++ `<button type="button">Click Me!</button>`
+- The type=button, is there so that you can create an action, send data to the back end or perfom some sort of user interface change in order words it allows to create some sort of an event that can get triggered by some sort of an action
+
