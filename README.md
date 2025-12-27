@@ -202,7 +202,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - In the `<a>` href attribute use the `#` to point to an id of different element in order to move to that different element in the same editor.
 
 - e.g.
-`
+
 ```
 <a href="#redirect_Section">POINT TO A DIFFERENT SECTION</a>
 .
@@ -214,4 +214,177 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - You can always point to the different part on the same page using this anchor tag with `href="#"` and the added id of that element.
 
 
-16. 
+16. Add images to the HTML pages.
+- Similar to `<a>` the image element requires an attribute to work, 
+- It uses the `src` - short for source
+- Image tag is self-closing tag.
+ + `<img src="./assets/bgimage.png" alt="">`
+
+- File paths - can be relative or from online similar to `<a>`
+ + Relative Path: `<img src="https://www.link.com" alt="">`
+ + Absoluete Path: `<img src="./assets/bgimage.png" alt="">`
+
+17. What does the alt attribute do? 
+- Images are not valid without the `alt` attribute.
+- `Alt` attribute is used to describe the image.
+- `Alt` attribute describe the intent of the image:
+ + Can be empty string
+ + `<img src="./assets/bgimage.jpg" alt="Netflix Cover Image">`
+
+18. Lists:
+
+- What are lists 
+ + Regular bulleted or numbered lists.
+ + Navigations
+ + Organizing other
+
+- Types of lists:
++ Ordered lists `<ol>`
++ Unordered lists `<ul>`
+- Each list has a list item:
+
+```
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+```
+
+19. Div tags:
+- Div stands for division.
+- Used to Divide content into sections
+-  The reason we might divide the content into section is so that we can style these divided content into different styling.
+
+20. The Layout Elements:
+
+- Header
+- Nav
+- Section:
+ + Main: Article
+ + Aside
+- Footer
+- We can actually give the direct meaning to our sections e.g. `<footer></footer>` to make the Browser understand that the page has footer element.
+- 
+
+21. HTML Form Element: Taking user data using input tags.
+- Is used collect the user input.
+- User input is most often sent to the server for a processing.
+- `<form>` is used to create an HTML form for the user:
+ + input
+```
+<form>
+.
+form elements
+.
+<form>
+```
+
+22. Form elements - A real world example: Login Form.
+```
+- <label>
+- <select>
+- <textarea>
+```
+
+- `<button type="button">Click Me!</button>`
+- To create input for user, use the input tag: `<input type="text" id="username" name="username">`, there are many types you can give to your input tag, text, or passsword and etc. It depends what you wanna give it.
+- We can always give our input a label, `<label for="username">Username</label>` this is just used for labelling your user input.
+- E.g.: Real world example - Login Form.
+```
+    <form action="">
+        <h1>LOGIN FORM</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <label for="gender">Female</label>
+        <input type="radio" id="female" name="female" value="Female">
+        <label for="gender">Male</label>
+        <input type="radio" id="male" name="male" value="Male">
+    <button>LOGIN</button>
+    </form>
+```
+- You can add a newline(next line) using the following tag: `<br>`
+
+23. Labels & Textarea:
+**Label**
+- For an input, you have to add the attribute name in case of radio type, so that they refer to the radio input, if one is selected the other is unselected.
+e.g.:
+
+```
+    <form action="">
+        <h1>LOGIN FORM</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <br>
+        <input type="radio" id="Female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="Male" name="gender" value="male">
+        <label for="female">Male</label><br>
+        <input type="radio" id="Other" name="gender" value="other">
+        <label for="other">other</label><br>
+        <button>LOGIN</button>
+    </form>
+```
+- For an input, you can add the different atttribute name in case of checkbox type, you can selected more than one different value of this input type - You can different options that is how checkbox are used.
+
+```
+    <form action="">
+        <h1>LOGIN FORM</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <br>
+        <input type="checkbox" id="Female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="checkbox" id="Male" name="gender" value="male">
+        <label for="female">Male</label><br>
+        <input type="checkbox" id="Other" name="gender" value="other">
+        <label for="other">other</label><br>
+        <button>LOGIN</button>
+    </form>
+```
+**Textarea**
+- For description open text, you cannot use input tag, use the textarea tag - this you can add more text for description input that user needs to submit.
+
+e.g:
+```
+    <form>
+        <h1>LOGON FORM</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <button>LOGIN</button>
+    </form>
+```
+**Select**
+- For available values of inputs that user might want to select in the select area of the forms, you can use the `<select>` tag. Using this you can give the values to which the user can select.
+- Inside the `<select>` you can give options as values that user can choose from. Use the option inside the `<select>`.
+e.g.:
+```
+<form>
+    <label for="Profile">Select Profile<label>
+    <select name="profile" id="profile>
+        <option value="Akhil">Akhil</option>
+        <option value="Jane">Jane</option>
+        <option value="Sam">Sam</option>
+        <option value="Historia">Historia</option>
+    </select>
+</form>
+```
+
+24. Buttons element:
+- the `<button>` defines a clickable button.
+- Inside a `<button>` element you can put the text (And Tags like, `<i>`, `<strong>`, `<img>`, `<br>`, `<em>`). This is not possible with the button created with the `<input>` element.
++ `<button type="button">Click Me!</button>`
+- The type=button, is there so that you can create an action, send data to the back end or perfom some sort of user interface change in order words it allows to create some sort of an event that can get triggered by some sort of an action
+
