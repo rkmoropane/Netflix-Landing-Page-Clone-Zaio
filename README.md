@@ -388,3 +388,34 @@ e.g.:
 + `<button type="button">Click Me!</button>`
 - The type=button, is there so that you can create an action, send data to the back end or perfom some sort of user interface change in order words it allows to create some sort of an event that can get triggered by some sort of an action
 
+25. The Video Element:
+- The `<video>` element is used to show the video on a web page.
+e.g.:
+
+```
+    <video controls autoplay playsinline muted loop preload width="600" height="500">
+        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                    type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb"
+                    type="video/mp4">
+    </video>
+```
+
+- The video tag comes with attributes:
++ `autoplay=`: when the page loads the video starts playing automatically.
++ `playsinline=`: It plaays inline with whatever element is there around it.
++ `muted=`: Video is going to be muted, no sounds is there
++ `loop=`: The video is going to play in a loop.
+
+- You can give the source inside the `<source>` tag, where you will specify the source in it using the `src` attribute, where you can use either Relative Path or Absolute path. And the `type` attribute you can specify in it the type of the element, e.g. mp4 video like `type="video/mp4"`.
+**Other video tag attributes**:
+- autoplay:	Specifies that the video will start playing as soon as it is ready
+- controls:	Specifies that video controls should be displayed (such as a play/pause button etc).
+- height(in pixels):	Sets the height of the video player
+- loop:	Specifies that the video will start over again, every time it is finished
+- muted:	Specifies that the audio output of the video should be muted
+- poster(URL):	Specifies an image to be shown while the video is downloading, or until the user hits the play button
+- preload(auto, metadata, none):	Specifies if and how the author thinks the video should be loaded when the page loads.
+- src(URL):	Specifies the URL of the video file
+- width(In pixels):	Sets the width of the video player
+
