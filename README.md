@@ -366,3 +366,19 @@ e.g:
         <button>LOGIN</button>
     </form>
 ```
+**Select**
+- For available values of inputs that user might want to select in the select area of the forms, you can use the `<select>` tag. Using this you can give the values to which the user can select.
+- Inside the `<select>` you can give options as values that user can choose from. Use the option inside the `<select>`.
+e.g.:
+```
+<form>
+    <label for="Profile">Select Profile<label>
+    <select name="profile" id="profile>
+        <option value="Akhil">Akhil</option>
+        <option value="Jane">Jane</option>
+        <option value="Sam">Sam</option>
+        <option value="Historia">Historia</option>
+    </select>
+</form>
+```
+
