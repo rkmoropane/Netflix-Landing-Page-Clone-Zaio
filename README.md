@@ -419,3 +419,10 @@ e.g.:
 - src(URL):	Specifies the URL of the video file
 - width(In pixels):	Sets the width of the video player
 
+26. Span tag:
+
+- Is used a lot quite often on the logos, where more styling needs to be applied on. E.g.:
+`<span style="color: red;">Start</span>`
+- Its quite an interesting element in HTML. 
+- It's used for a very specific kind of styling on a specific html element, you can use span tag on these unique element, e.g. Logo.
+
