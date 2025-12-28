@@ -24,42 +24,30 @@ Working towards building the awesome Netflix platform (it will not be complete t
 
 - By the end of the series 'Starting on the NetFlix Landing page clone' you should have built Netflix landing page barebones structure using only HTML and CSS.
 
-2. Building blocks of Web: HTML, CSS & Javascript.
-**HTML**
+#### **HTML**
 - All content comes from HTML: Hyper Text Markup language. It's a Mark up language that computer can interprets and write on the Website.
 - The HTML file, known as Entry point file is basically where each websites starts at.
 - HTML is the basics, headings, paragraphs, etc.
 
-**CSS**
-- Cascading Styling Sheets. 
-- The look of the website - Human Body Analogy - Intertwined.
-- Fonts, Colors, Backgrounds, layouts and many more styles.
-- It brings that look and feel to websites, creates that amazing astatic. 
 
-**JavaScript**
-- Programming Language
-- Used to manipulate the HTML and CSS
-- Can build Web Apps - Many Frameworks, like React.JS, Angular.JS built on top of JavaScript. You can build mobile, web, desktop apps and etc.
-- Brings live to Website, makes website interactive. Triggers actions, changes the placement of other elements - removes/display the headings, title & etc. Makes developers play around with HTML and CSS using JavaScript to make Websites functional.
-
-3. **HTML vs CSS**
+1. **HTML vs CSS**
 
 - How important are HTML vs CSS relatively.
 - Websites cannot without CSS, it needs the styling functionality to be able to work 100%.
 - 
 
-4. How to use the interactive coding environment:
+2. How to use the interactive coding environment:
 
 - Ashkil will be coding something in the interactive coding environment, pushing each time. I just have to pull into my VS code environment and make pushes each time.
 - Practice n Practice, pull the changes and make your hands dirty everytime.
 
-5. Let's get setup:
+3. Let's get setup:
 
 - Have google Chrome setup installed [x]
 - Have VS Code setup installed [x]
 - Have Live Server extension installed in VS Code [x]
 
-6. **HTML Book Analogy**
+4. **HTML Book Analogy**
 
 - Tells the browser exactly what the content we are writing.
 - Consists of:
@@ -81,7 +69,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - Everything from opening to closing tags is an element.
 - Elements define our content in the Browser - `<p>` this is paragraph, `<h1>` this is heading, etc.
 
-7. **File Naming Conventions & File organizing:** Stick to same consistance of these so that you follow good practices in the Web Development Industries.
+5. **File Naming Conventions & File organizing:** Stick to same consistance of these so that you follow good practices in the Web Development Industries.
 
 - Sstick to lowercase for naming files,
 - Make the names shorter,
@@ -92,7 +80,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - Can put pages into sub folders.
 - Assets folders for images
 
-8. File structure:
+6. File structure:
 - We normally have the first thing at top of every HTML file document:
 
 ```
@@ -120,7 +108,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 ```
 - Where all the content goes, like headings, paragraphs, main sections, and etc.
 
-9. **Headings & Paragraphs**
+7. **Headings & Paragraphs**
 
 - Headings denote the hierarchy & page structure.
 - Only have 6 levels of headings:
@@ -131,7 +119,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - use the tag: `<p>`
 - Not numbered like headings, only the `<p>` tag.
 
-10. **Strong vs Em**
+8. **Strong vs Em**
 
 ```
 <strong>
@@ -146,7 +134,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - Write *italic* text in the browser.
 - Emphasis on the certain text in between `<em></em>`
 
-11. **The Anchor element**
+9. **The Anchor element**
 
 - `<a>` is short for anchor
 - Used to link:
@@ -161,7 +149,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 
 - **How will the browser know where to redirect when this element is clicked on?** We need to understand the elements' attributes.
 
-12. Elements can have attributes:
+9. Elements can have attributes:
 
 - Are always given within the opening tag.
 - Gives extra info:
@@ -180,7 +168,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 
 - **Relative Path**: Like Absolute Path where we can specify the external website, we can also point to files in our project called Relative path.
 
-13. **Relative Path**:
+10. **Relative Path**:
 
 - Pointing to files in locally - in the project.
 - Visit about us page:
@@ -189,13 +177,13 @@ Working towards building the awesome Netflix platform (it will not be complete t
  + Above is how to create an image - pointing to a local file i.e. **Relative Path** 
 - Create a CONTACT US page, link it in the Home page pointing to Contact Us page - That's how you use **Relative Path**
 
-14. Opening in a new tab: **Target attribute**:
+11. Opening in a new tab: **Target attribute**:
 
 - Use the `target="_blank"` attribute within the opening tag of the anchor tag <a> to open in a new tab.
  + `<a href="./about-us.html" target="_blank">About Us</a>`
 - `https://www.w3schools.com/tags/att_a_target.asp`
 
-15. Redirecting to a different part on the same page: Anchor tag - position on same page.
+12. Redirecting to a different part on the same page: Anchor tag - position on same page.
 
 - Move cursor to a different element on the code editor.
 
@@ -214,7 +202,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - You can always point to the different part on the same page using this anchor tag with `href="#"` and the added id of that element.
 
 
-16. Add images to the HTML pages.
+13. Add images to the HTML pages.
 - Similar to `<a>` the image element requires an attribute to work, 
 - It uses the `src` - short for source
 - Image tag is self-closing tag.
@@ -224,14 +212,14 @@ Working towards building the awesome Netflix platform (it will not be complete t
  + Relative Path: `<img src="https://www.link.com" alt="">`
  + Absoluete Path: `<img src="./assets/bgimage.png" alt="">`
 
-17. What does the alt attribute do? 
+14. What does the alt attribute do? 
 - Images are not valid without the `alt` attribute.
 - `Alt` attribute is used to describe the image.
 - `Alt` attribute describe the intent of the image:
  + Can be empty string
  + `<img src="./assets/bgimage.jpg" alt="Netflix Cover Image">`
 
-18. Lists:
+15. Lists:
 
 - What are lists 
  + Regular bulleted or numbered lists.
@@ -251,12 +239,12 @@ Working towards building the awesome Netflix platform (it will not be complete t
 </ol>
 ```
 
-19. Div tags:
+16. Div tags:
 - Div stands for division.
 - Used to Divide content into sections
 -  The reason we might divide the content into section is so that we can style these divided content into different styling.
 
-20. The Layout Elements:
+17. The Layout Elements:
 
 - Header
 - Nav
@@ -267,7 +255,7 @@ Working towards building the awesome Netflix platform (it will not be complete t
 - We can actually give the direct meaning to our sections e.g. `<footer></footer>` to make the Browser understand that the page has footer element.
 - 
 
-21. HTML Form Element: Taking user data using input tags.
+18. HTML Form Element: Taking user data using input tags.
 - Is used collect the user input.
 - User input is most often sent to the server for a processing.
 - `<form>` is used to create an HTML form for the user:
@@ -280,7 +268,7 @@ form elements
 <form>
 ```
 
-22. Form elements - A real world example: Login Form.
+19. Form elements - A real world example: Login Form.
 ```
 - <label>
 - <select>
@@ -307,7 +295,7 @@ form elements
 ```
 - You can add a newline(next line) using the following tag: `<br>`
 
-23. Labels & Textarea:
+20. Labels & Textarea:
 **Label**
 - For an input, you have to add the attribute name in case of radio type, so that they refer to the radio input, if one is selected the other is unselected.
 e.g.:
@@ -382,13 +370,13 @@ e.g.:
 </form>
 ```
 
-24. Buttons element:
+21. Buttons element:
 - the `<button>` defines a clickable button.
 - Inside a `<button>` element you can put the text (And Tags like, `<i>`, `<strong>`, `<img>`, `<br>`, `<em>`). This is not possible with the button created with the `<input>` element.
 + `<button type="button">Click Me!</button>`
 - The type=button, is there so that you can create an action, send data to the back end or perfom some sort of user interface change in order words it allows to create some sort of an event that can get triggered by some sort of an action
 
-25. The Video Element:
+22. The Video Element:
 - The `<video>` element is used to show the video on a web page.
 e.g.:
 
@@ -419,14 +407,14 @@ e.g.:
 - src(URL):	Specifies the URL of the video file
 - width(In pixels):	Sets the width of the video player
 
-26. Span tag:
+23. Span tag:
 
 - Is used a lot quite often on the logos, where more styling needs to be applied on. E.g.:
 `<span style="color: red;">Start</span>`
 - Its quite an interesting element in HTML. 
 - It's used for a very specific kind of styling on a specific html element, you can use span tag on these unique element, e.g. Logo.
 
-27. Tables:
+24. Tables:
 - `<table class="styled">`
 - `<thead>`
  + `<tr>`
@@ -438,12 +426,12 @@ e.g.:
 - Table Styling: Normally for table you'd use the bootstrap to style the table.
 - 
 
-28. Commenting code: 
+25. Commenting code: 
 - It is very good practice. Helps with code handovers & debugging
 - Code is commented as follows: ``<! -- <h2>Enjoy on your TV.</h2> -->``
 - 
 
-29. The Favicon. Whats that?
+26. The Favicon. Whats that?
 - Icon
 - Used inside the head tag:
 
@@ -453,7 +441,7 @@ e.g.:
 </head>
 ```
 
-30. Embedding Scripts in HTML:
+27. Embedding Scripts in HTML:
 
 - You can use link tag to add the font-family from `fonts.google.com`, this way you will need to specify the CSS rule in the head tag, and skip creating a styling file.
 - Another you can use scripts tag - `<scripts>`, at the very end of our body. Right before the closing body tag.
@@ -462,4 +450,21 @@ e.g.
     <script>
         alert("HELLO WORLD")
     </script>
-````
+```
+
+
+
+
+#### **CSS**
+- Cascading Styling Sheets. 
+- The look of the website - Human Body Analogy - Intertwined.
+- Fonts, Colors, Backgrounds, layouts and many more styles.
+- It brings that look and feel to websites, creates that amazing astatic. 
+
+**JavaScript**
+- Programming Language
+- Used to manipulate the HTML and CSS
+- Can build Web Apps - Many Frameworks, like React.JS, Angular.JS built on top of JavaScript. You can build mobile, web, desktop apps and etc.
+- Brings live to Website, makes website interactive. Triggers actions, changes the placement of other elements - removes/display the headings, title & etc. Makes developers play around with HTML and CSS using JavaScript to make Websites functional.
+
+1. 
