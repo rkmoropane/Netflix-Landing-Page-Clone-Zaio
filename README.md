@@ -426,3 +426,21 @@ e.g.:
 - Its quite an interesting element in HTML. 
 - It's used for a very specific kind of styling on a specific html element, you can use span tag on these unique element, e.g. Logo.
 
+27. Tables:
+- `<table class="styled">`
+- `<thead>`
+ + `<tr>`
+ + `<th>First Name</th>`
+
+- `<tbody>`
+ + `<tr>`
+ + `<td>John</td>`
+- Table Styling: Normally for table you'd use the bootstrap to style the table.
+- 
+
+28. Commenting code: 
+- It is very good practice. Helps with code handovers & debugging
+- Code is commented as follows: ``<! -- <h2>Enjoy on your TV.</h2> -->``
+- 
+
+29. The
