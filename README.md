@@ -443,4 +443,23 @@ e.g.:
 - Code is commented as follows: ``<! -- <h2>Enjoy on your TV.</h2> -->``
 - 
 
-29. The
+29. The Favicon. Whats that?
+- Icon
+- Used inside the head tag:
+
+```
+<head>
+    <link rel="icon" href="assets/favicon.png">
+</head>
+```
+
+30. Embedding Scripts in HTML:
+
+- You can use link tag to add the font-family from `fonts.google.com`, this way you will need to specify the CSS rule in the head tag, and skip creating a styling file.
+- Another you can use scripts tag - `<scripts>`, at the very end of our body. Right before the closing body tag.
+e.g.
+```
+    <script>
+        alert("HELLO WORLD")
+    </script>
+````
