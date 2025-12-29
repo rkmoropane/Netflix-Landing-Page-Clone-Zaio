@@ -3,4 +3,9 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background: red;
+}
+h1 {
+    /* color: blue; */
+    font-size: 36px;
 }
