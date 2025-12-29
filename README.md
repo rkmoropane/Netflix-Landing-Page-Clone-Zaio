@@ -467,4 +467,6 @@ e.g.
 - Can build Web Apps - Many Frameworks, like React.JS, Angular.JS built on top of JavaScript. You can build mobile, web, desktop apps and etc.
 - Brings live to Website, makes website interactive. Triggers actions, changes the placement of other elements - removes/display the headings, title & etc. Makes developers play around with HTML and CSS using JavaScript to make Websites functional.
 
-1. 
+1. CSS inline, Internal And External CSS.
+- Apply the DRY principle. Use external CSS
+- 
