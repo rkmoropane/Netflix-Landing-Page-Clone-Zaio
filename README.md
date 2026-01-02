@@ -470,3 +470,23 @@ e.g.
 1. CSS inline, Internal And External CSS.
 - Apply the DRY principle. Use external CSS
 - 
+
+2. Selectors:
+- Simple selectors
+- Combinator selectors
+- Pseudo-class Selectors
+- Pseudo-elements Selectors
+- Attribute Selectors
+
+3. Id Selector:
+- No two or more items can have the same value of the id.
+
+4. Class Selectors:
+- Most used in your CSS. Use `.`
+
+5. Simple Selectors: Multiple classes:
+
+- `<p class="lg-font red"></p>`
+
+6. Universal selector `*`:
+

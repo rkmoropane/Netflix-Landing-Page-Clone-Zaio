@@ -1,11 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
 
+* {
+    color: purple;
+    font-size: 16px;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: red;
 }
+
 h1 {
-    /* color: blue; */
-    font-size: 36px;
+    font-size: 45px;
+}
+
+h2 {
+    color: blue;
+}
+
+#faq-item {
+    color: red;
+}
+
+/* ALL FONT SIZES */
+
+.lg-font {
+    font-size: 35px;
+}
+
+.md-font {
+    font-size: 25px;
+}
+
+.sm-font {
+    font-size: 18px;
+}
+
+/* MAIN COLOR SCHEME */
+.primary {
+    color: red;
+    font-size: 10px;
 }
