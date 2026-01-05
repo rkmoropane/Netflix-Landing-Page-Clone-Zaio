@@ -931,4 +931,4 @@ e.g.
 }
 ```
 
-17. 
+17. CSS: Flexbox - Fix `info-container` container.
