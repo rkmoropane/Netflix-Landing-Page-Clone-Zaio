@@ -960,4 +960,36 @@ e.g.
 
 ```
 
-19.  
+19.  Pseudo Class Selectors:
+- Used to define a special state of an element. 
+ + It can be used to style an element when user moves over it.
+ + It can be used to style visited and unvisited links differently.
+ + It can be used to style an element when it gets focus.
+- Anchor Pseudo-class
+- Pseudo-class and CSS classes
+- Hover on `<div>`
+- `https://www.w3schools.com/css/css_pseudo_classes.asp`
+
+e.g.:
+
+```
+/* Unvisited link */
+a:link {
+    color: #FF0000
+}
+
+/*Visited link */
+a:visited {
+    color: #FF00FF
+}
+
+/*Mouse over link - Mostly used.*/
+a:hover {
+    color: #00FF00
+}
+
+/*Selected link */
+a:active {
+    color: #0000FF
+}
+```
