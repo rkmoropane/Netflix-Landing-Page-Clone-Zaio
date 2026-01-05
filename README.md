@@ -591,3 +591,44 @@ e.g.
     background-repeat: no-repeat;
 }
 ```
+12. CSS Selectors: Comninator Selectors:
+**Four types**
+- Descendent selector> matches all the elements that are descendents of a specific element.
+e.g.
+```
+.combined p {
+    background: yellow;
+}
+```
+- Child Selector `>`: Selects all elements that are the children of the specified element
+e.g.
+```
+.combined > p {
+    background: yellow;
+}
+```
+
+- Adjacent Sibling selector: is used to select the element that is directly after another specified element: meaning right next only
+e.g.
+```
+.combined + p {
+    background: yellow;
+}
+```
+
+- General Sibling Selectors: Selects all the elements that are sibling of the specified element.
+ e.g.
+```
+.combined ~ p {
+    background: yellow;
+}
+```
+
+13. CSS units:
+- Px value == absolute value
+- % relative to the parent
+- Vw == based on the screen size
+- Vh == based on the screen size
+- em == relative to the parent element
+- Rem == relative to the root
+- % works the same as em for fonts

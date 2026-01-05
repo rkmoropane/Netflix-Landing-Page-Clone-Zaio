@@ -14,3 +14,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.combined ~ p {
+    background: yellow;
+}
