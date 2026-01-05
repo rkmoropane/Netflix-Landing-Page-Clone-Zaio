@@ -550,6 +550,7 @@ e.g.
 ```
 
 10. CSS: Box sizing
+-  `{ box-sizing: border-box;}` is used to include the padding and border of the element within the specified height and width of the element.
 - How to resolve the problem with the Width and Height on above example of Box Model.
 - Use Box Sizing, height is actual equal ( 2 x  Padding + 2 x  Border), the one given in the above example is not the actual height of the element.
 - Use Box Sizing, width is actual equal (2 x  Padding + 2 x  Border), the one given in the above example is not the actual width of the element.
@@ -561,5 +562,32 @@ e.g.:
 * {
     box-sizing: border-box;
     margin: 0px;
+}
+```
+11. CSS: Backgrounds
+
+- Used to define the background effects for an element.
++ background-color: color of the image
++ opacity: set the transparency of the image.
++ background-image: URL(link)
++ background-size: e.g. 'auto' default, 'cover' good practice, 'contain'==auto, 
++ background-repeat: specify the repeat of the image, e.g.: 'no-repeat' default, '2 5'=='2 in x-axis and 5 in y-axis' and ect.
++ background-position: the positioning of the image, e.g. 'top', 'center' default, etc
+
+
+Online: e.g.
+```
+* {
+    background: bg-color bg-image bg-repeat bg-position;
+}
+```
+Example set for the project:
+e.g.
+```
+.banner-wrap {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/2b0fca4f-c15c-4622-9efc-572c4a408c30/IN-en-20230605-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    opacity: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 ```
