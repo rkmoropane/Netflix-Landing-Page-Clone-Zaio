@@ -993,3 +993,57 @@ a:active {
     color: #0000FF
 }
 ```
+
+20. Pseudo-Element Selectors:
+- Is used to style specific parts of the element.
+- For example, it can be used:
+ + Style the first letter, or line of an element.
+ + Insert content before, or after, the content of an element.
+- Pseudo-elements have two colons while Pseudo-class have one colon
+
+```
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+p.intro::first-letter {
+    color: #ff0000;
+    font-size: 200%;
+}
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+```
+
+Practical example:
+```
+.info-container > p::first-letter {
+    color: red;
+}
+
+```
+or
+```
+.info-container > p::first-line {
+    color: red;
+}
+```
+- Before Selector and After Selector: Before the element is loaded and after an element has loaded
+e.g.
+```
+h1::before {
+    content: "THIS IS A HEADING";
+}
+```
+or 
+
+```
+h1::after {
+    content: "THIS IS A HEADING";
+}
+```
