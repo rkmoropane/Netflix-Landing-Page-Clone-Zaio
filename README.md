@@ -803,3 +803,132 @@ HTML:
 - NB: with display: none; element will simply disappear
 
  -= If the height or width of the element does not work in CSS, just change to the diplay: 'inline-block'; or 'block'
+
+16. CSS Position property: 
+- All elements have default position: static i.e. - appear in order specified in element flow
+- We can control flow using other properties
+- `position: relative`
+ + The position element relative to its original  position in the element flow
+ + This does not affect the other elements in the flow
+
+e.g.:
+```
+    <div class="info-container">
+        <div class="box relative"></div>
+```
+```
+.box {
+    height: 150px;
+    width: 150px;
+    background: green;
+    position: relative; /* Allows you to place an element relative to its original position*/
+    top: 0;
+    left: 50%;
+}
+
+```
+
+- Position: absolute removes an element from the normal flow
+ + The element will be positioned in relation to the first ancestor that is not static or that is not in the natural flow
+ + can change the positioning of parent to relative - it does not alter the position of elements. e.g.
+
+```
+    <div class="box absolute">Absolute</div>
+
+    <div class="info-container">
+        <div class="box relative">Relative</div>
+```
+
+
+```
+.box {
+    height: 150px;
+    width: 150px;
+    background: green;
+
+}
+.relative {
+    position: relative; /* Allows you place an element relative to its original position*/
+    bottom: 50%;
+    left: 50%;
+}
+.absolute {
+    position: absolute;
+    right: 0;
+}
+```
+
+example to apply on 'info-container':
+```
+    <div class="info-container">
+        <div class="box absolute">Absolute</div>
+        <h1>Enjoy your TV.</h1>
+```
+
+```
+.info-container {
+    background: black;
+    color: white;
+    position: relative;
+}
+.box {
+    height: 150px;
+    width: 150px;
+    background: green;
+
+}
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+```
+- `Position: fixed` - it actually disrupt the element from the normal flow, its used for **navbar**, to place the element fixed to the position relative to the normal flow
+```
+    <div class="info-container">
+        <div class="box fixed">Fixed</div> <!-- it is actually used for navbar, to place the element fixed to the position relative to the normal flow -->
+        <!-- <div class="box absolute">Absolute</div> -->
+        <!-- <div class="box relative">Relative</div> -->
+```
+
+```
+.box {
+    height: 150px;
+    width: 150px;
+    background: green;
+
+}
+.fixed {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    height: 50px;
+    width: 100%;
+}
+```
+
+- `position: sticky;` 
+e.g.
+```
+    <div class="info-container">
+        <div class="box sticky">Sticky</div> 
+        <!-- <div class="box fixed">Fixed</div>  -->
+        <!-- <div class="box Relative">Relative</div>
+        <div class="box absolute">Absolute</div> -->
+```
+
+```
+.box {
+    height: 150px;
+    width: 150px;
+    background: green;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    width: 100%;
+}
+```
+
+17. 

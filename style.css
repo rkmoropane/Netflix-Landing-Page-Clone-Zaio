@@ -56,3 +56,43 @@ h1 {
     height: 80%;
 }
 
+.info-container {
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background: green;
+
+}
+
+.relative {
+    position: relative; /* Allows you place an element relative to its original position*/
+    top: 0;
+    left: 50%;
+    bottom: 50%;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fixed {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    height: 50px;
+    width: 100%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    width: 100%;
+}
