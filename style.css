@@ -4,16 +4,23 @@
     box-sizing: border-box;
     margin: 0;
     font-size: 16px;
+    text-decoration: none;
 }
-
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    font-size: 3.2rem; /* relative to the root size default value multiply by 3*/
-    color: white;
+.card-title {
+    font-size: 3.125rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.card-subtitle {
+    font-size: 1.625rem;
+    font-weight: 400;
 }
 
 .banner-wrap {
@@ -22,12 +29,15 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    border-bottom: 10px solid #222222;
+    border-bottom: 10px solid #222;
 }
 
+h1 {
+    font-size: 3.2rem; /* relative to the root size default value multiply by 3*/
+    color: white;
+}
 
 .navbar {
-    height: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,7 +64,7 @@ h1 {
     flex-direction: column; /* The 'justify-content' switch with 'align-items', thus we align flex items using 'align-items' property.*/
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 80% ;
 }
 
 .info-container {
@@ -62,7 +72,7 @@ h1 {
     color: white;
     display: flex;
     padding: 70px 45px;
-    border-bottom: 10px solid #222222;
+    border-bottom: 10px solid #222;
 }
 
 .info {
