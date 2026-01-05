@@ -550,4 +550,16 @@ e.g.
 ```
 
 10. CSS: Box sizing
-- 
+- How to resolve the problem with the Width and Height on above example of Box Model.
+- Use Box Sizing, height is actual equal ( 2 x  Padding + 2 x  Border), the one given in the above example is not the actual height of the element.
+- Use Box Sizing, width is actual equal (2 x  Padding + 2 x  Border), the one given in the above example is not the actual width of the element.
+- Padding and Border are added the actual size of these two. 
+- We can use **Box Sizing** which allows to include the padding and border in an element's total width and height. 
+- NB: **Rearrange the actual values of Width and Height, so the height and width of the element will be exactly equal to value specified in the Box Model example.**
+e.g.:
+```
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+```
