@@ -11,22 +11,48 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-size: 3.2rem; /* relative to the root size default value multiply by 3*/
+    color: white;
+}
+
 .banner-wrap {
     background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/2b0fca4f-c15c-4622-9efc-572c4a408c30/IN-en-20230605-popsignuptwoweeks-perspective_alpha_website_large.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
 }
 
-.banner-container {
-    font-size: 20px;
+
+.navbar {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    margin: 0 45px;
+    padding-top: 45px;
 }
 
-.get-started-form h3 {
-    font-size: 2rem;
+.navbar > svg {
+    height: 32px;
 }
 
-h1 {
-    font-size: 3.2rem; /* relative to the default value times 3*/
+.navbar > a {
+    padding: 7px 17px;
     color: white;
+    background: red;
+    text-decoration: none; /* we dont want it to be any color or underline > https://www.w3schools.com/css/css_text_decoration.asp*/
+    border-radius: 3px;
 }
+
+.banner-container {
+    color: white;
+    display: flex;
+    flex-direction: column; /* The 'justify-content' switch with 'align-items', thus we align flex items using 'align-items' property.*/
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+

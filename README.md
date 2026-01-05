@@ -707,3 +707,99 @@ h1 {
 - % works the same as em for fonts
 
 
+14. CSS: Flex and Flow.
+- A layout module. For flexible responsive layout structures
+- Use flexbox to organize your elements better.
+e.g. 
+```
+.menu-area {
+    display: flex;
+}
+```
+- By default if appears in row, which is horizontal.
+- Properties:
+ + **Flex-direction**: define a direction in which a container wants to stack the flex items = 'row' default, column', 'row-reverse', 'column-reverse'
+ + **justify-content**: align flex items. 'flex-start', 'flex-end', 'center', 'space-around' and 'space-between'
+ + **align-items**: align flex items in **opposite direction** (vertically): 'flex-start', 'flex-end', 'center', 'stretch' default and 'baseline':
+ e.g.:
+ ```
+ .banner-container {
+    display: flex;
+    color: white;
+    flex-direction: column; /* if flex-direction equals this, The 'justify-content' switch with 'align-items', thus we align flex items using 'align-items' property.*/
+}
+```
+correct way:
+```
+.banner-container {
+    display: flex;
+    color: white;
+    flex-direction: column; /* The 'justify-content' switch with 'align-items', thus we align flex items using 'align-items' property.*/
+    align-items: center;
+}
+```
+ + Flex-wrap
+ + Flex-flow
+ + align-content
+
+
+15. CSS: Elements flow
+
+- Div, span, images: 
+ + Divs are display: block; by default. Fill the parent container; and get stack on top of one another
+ + Spans are display: inline; by default. Will take minimal space in Divs, they can't have the width and height
+e.g.
+HTML:
+```
+    <span class="test">
+        TEST
+    </span>
+```
+CSS:
+```
+.test {
+    background: blue;
+    height: 50px;
+    width: 200px; /* heights and width do not apply to element of span*/
+}
+```
+
+```
+.test {
+    background: blue;
+    height: 50px;
+    width: 200px; /* heights and width do not apply to element of span*/
+    display: inline-block; /* Now the height and width will apply, display changed */
+}
+```
+
+HTML:
+```
+    <span class="test">
+        TEST
+    </span>
+    <span class="test">
+        TEST
+    </span>
+```
+```
+.test {
+    background: blue;
+    height: 50px;
+    width: 200px; /* heights and width do not apply to element of span*/
+    display: inline-block; /* Now the height and width will apply, display changed they will one next to each other*/
+}
+```
+```
+.test {
+    background: blue;
+    height: 50px;
+    width: 200px; /* heights and width do not apply to element of span*/
+    display: block; /* Now the height and width will apply, display changed they will one below to each other*/
+}
+```
+
+ + Images are disply: inline-block; by default. Can set height and width.
+- NB: with display: none; element will simply disappear
+
+ -= If the height or width of the element does not work in CSS, just change to the diplay: 'inline-block'; or 'block'
