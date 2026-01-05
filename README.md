@@ -490,3 +490,64 @@ e.g.
 
 6. Universal selector `*`:
 
+Use `*` for Universal Selector.
+
+7. CSS Fonts:
+
+- Access all the fonts from `fonts.google.com`, select your favorite and add it through import in CSS. E.g.:
+``
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+``
+
+8. CSS properties:
+- Lot of properties in CSS we can use to style our elements.
+
+- **Layout and Positioning**
+These properties control the placement, size, and arrangement of elements on a page. 
+ + display: Defines how an element is shown (e.g., block, inline, flex, grid, none).
+ + position: Specifies the element's positioning method (e.g., static, relative, absolute, fixed, sticky).
+ + top, bottom, left, right: Used with positioned elements to specify location.
+ + float: Specifies whether an element should float to the left or right.
+ + width, height: Sets the dimensions of an element.
+ + margin, padding: Control the space outside and inside an element's border, respectively.
+ + overflow: Controls what happens to content that is too big to fit into an area. 
+
+- **Text and Fonts**
+These properties control the typography and appearance of text. 
+ + color: Sets the color of the text.
+ + font-family: Specifies the typeface.
+ + font-size: Sets the size of the text.
+ + font-weight: Sets the thickness of the characters (e.g., bold, normal, 400, 700).
+ + text-align: Aligns the text within its element (e.g., left, center, right, justify).
+ + text-decoration: Adds decorations to text (e.g., underline, overline, line-through, none).
+ + line-height: Sets the height of a line box. 
+
+- **Visual Effects and Appearance**
+These properties manage visual styling, backgrounds, and interactivity. 
+ + background-color: Sets the background color of an element.
+ + background-image: Specifies a background image.
+ + border: A shorthand property for setting the width, style, and color of an element's border.
+ + border-radius: Adds rounded corners to elements.
+ + box-shadow: Attaches one or more shadows to an element.
+ + opacity: Sets the transparency level of an element.
+ + cursor: Specifies the mouse cursor to be displayed when pointing over an element. 
+
+`` https://www.w3schools.com/CSSref/index.php``
+
+9. CSS: Box Models
+- Consists of Margins, padding & content
+e.g.
+```
+.my-box {
+    height: 100px;
+    width: 100px;
+    background: rebeccapurple;
+    border: 10px solid black;
+    margin: 20px 25px 30px 25px;
+    padding: 50px 15px 10px 20px;
+}
+```
+
+10. CSS: Box sizing
+- 
