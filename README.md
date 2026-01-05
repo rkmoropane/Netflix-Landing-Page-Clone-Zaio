@@ -627,8 +627,64 @@ e.g.
 13. CSS units:
 - Px value == absolute value
 - % relative to the parent
+e.g. box2 inside box1, box2 takes percentage towards box1.
+HTML:
+```
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+```
+CSS:
+```
+.box1 {
+    height: 200px;
+    width: 200px;
+    background: blue;
+}
+.box2 {
+    height: 50%;
+    width: 50%;
+    background: red;
+}
+```
+
+or Make box2 take only 50% of height:
+```
+.box1 {
+    height: 200px;
+    width: 200px;
+    background: blue;
+}
+.box2 {
+    height: 50%;
+    width: 100%;
+    background: red;
+}
+```
 - Vw == based on the screen size
 - Vh == based on the screen size
+e.g.: 
+```
+.banner-wrap {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/2b0fca4f-c15c-4622-9efc-572c4a408c30/IN-en-20230605-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+}
+```
+
+apply to the project:
+```
+.banner-wrap {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/2b0fca4f-c15c-4622-9efc-572c4a408c30/IN-en-20230605-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+```
 - em == relative to the parent element
 - Rem == relative to the root
 - % works the same as em for fonts
+
+
