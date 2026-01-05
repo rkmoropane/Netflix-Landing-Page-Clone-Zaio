@@ -65,6 +65,21 @@ h1 {
     border-bottom: 10px solid #222222;
 }
 
+.tv-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv-container img {
+    z-index: 1;
+}
+
+.tv-container video {
+    position: absolute;
+}
+
 .footer {
     background: black;
 }

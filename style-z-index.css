@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+}
+
+.element {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.element:hover {
+    transform: scale(1.2);
+}
+
+.element1 {
+    /* Your code here  */
+    Background-color: rgb(255, 160, 122);
+    Left: 50px;
+    Top: 50px;
+    z-index: 3;
+}
+
+.element2 {
+    /* Your code here  */
+    Background-color: rgb(152, 251, 152);
+    Left: 100px;
+    Top: 100px;
+    z-index: 2;
+}
+
+.element3 {
+    /* Your code here  */
+    Background-color: rgb(173, 216, 230);
+    Left: 150px;
+    Top: 150px;
+    z-index: 1;
+}

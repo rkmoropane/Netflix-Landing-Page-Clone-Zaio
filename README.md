@@ -931,4 +931,31 @@ e.g.
 }
 ```
 
-17. CSS: Flexbox - Fix `info-container` container.
+17. CSS: Flexbox - Fix `info-container` container and Putting the video inside the tv container
+- Get the video inside the tv-container, video has to be absolute positioned container,and the tv-container the first relative positioned that the disrupted positioned element(video) will take tv normal position flow.
+e.g.
+```
+.tv-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv-container video {
+    position: absolute;
+}
+
+```
+18. CSS: Z-index - Making the TV appear in Front of Video.
+- Z-index specifies the stack order of an element.
+- An element with greater stack order is always in front of the element with lower stack order.
+- Z-index only works on the positioned elements(position: absolute, position: relative, position: fixed, or position: sticky).
+- By default the z-index of the positioned element is 0.
+e.g.
+```
+.tv-container img {
+    z-index: 1;
+}
+
+```
