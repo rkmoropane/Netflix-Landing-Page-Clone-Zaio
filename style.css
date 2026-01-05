@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+}
+
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -8,16 +15,18 @@ body {
     background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/2b0fca4f-c15c-4622-9efc-572c4a408c30/IN-en-20230605-popsignuptwoweeks-perspective_alpha_website_large.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 10s0vh;
+    height: 100vh;
 }
 
-/* .box1 {
-    height: 200px;
-    width: 200px;
-    background: blue;
+.banner-container {
+    font-size: 20px;
 }
-.box2 {
-    height: 50%;
-    width: 50%;
-    background: red;
-} */
+
+.get-started-form h3 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3.2rem; /* relative to the default value times 3*/
+    color: white;
+}

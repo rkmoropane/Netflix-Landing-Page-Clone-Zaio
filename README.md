@@ -683,8 +683,27 @@ apply to the project:
     height: 90vh;
 }
 ```
-- em == relative to the parent element
+
+**CSS: FONTS**: The following are used specifically for fonts.
 - Rem == relative to the root
+e.g.
+```
+h1 {
+    font-size: 5rem; /* relative to the default value times 3*/
+    color: white;
+}
+```
+- em == relative to the parent element's fonts - Bad user design-principle, prefer to use `rem` as it is good principles.
+```
+.banner-container {
+    font-size: 20px;
+}
+
+.get-started-form h3{
+    font-size: 2em;
+}
+
+```
 - % works the same as em for fonts
 
 
