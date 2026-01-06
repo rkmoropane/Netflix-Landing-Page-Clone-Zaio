@@ -1,0 +1,16 @@
+/* css code is here  */
+h1 {
+    color: rgb(0, 0, 255);
+}
+p {
+    font-size: 16px;
+}
+ul {
+    list-style-type: square;
+}
+ol li {
+    font-weight: bold;
+}
+div {
+    background-color: rgb(211, 211, 211);
+}

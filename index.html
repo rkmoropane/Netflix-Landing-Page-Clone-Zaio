@@ -6,27 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Netflix Kenya - Watch TV Shows</title>
     <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css"> <!-- Use it for mobile/tablet optimizations, add on more styles to the styles added on top: make sure you order them accordingly -->
 
-    <title>Netflix</title>
-
-
-    <style>
-        * {
-            font-family: 'Open Sans', sans-serif;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
+    <div class="test">NOW IN TABLET MODE</div>
+    <div class="banner-wrap">
+        <div class="overlay"></div>
         
         <!-- Navbar -->
-        <nav>
+        <div class="navbar">
             <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
                 style="fill: rgba(229, 9, 20, 1)">
@@ -36,58 +30,85 @@
                     </path>
                 </g>
             </svg>
-            <a href="https://www.netflix.con/ke-en/login">Sign In</a>
-        </nav>
+            <a href="https://www.netflix.com/za/login">Sign In</a>
+            <!-- <a href="./contact-us/contact-us.html">Contact Us</a> -->
+        </div>
         
         <div class="banner-container">
-            <h1>Unlimited movies, TV Shows, and more.</h1>
-            <h2>Watch anywhere. Cancel anytime.</h2>
+            <h1 class="card-title">Unlimited movies, TV Shows, and more.</h1>
+            <h2 class="card-subtitle">Watch anywhere. Cancel anytime.</h2>
 
             <!-- Get started form -->
             <form>
-                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-                <input type="text">
-                <button type="button">GET STARTED ></button>
+                <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div class="get-started-form">
+                    <input type="text" placeholder="Email Address">
+                    <button type="button">GET STARTED ></button>
+                </div>
+                
             </form>
         </div>
-    </header>
+    </div>
 
     <div class="info-container">
-        <h1>Enjoy your TV.</h1>
-        <p>Watch on Start TVs, <strong>Playstation</strong>, Xbox, <em>Chromecast</em>, Apple TV, Blu-ray players, and more.</p>
+        <div class="info">
+            <h1 class="card-title">Enjoy your TV.</h1>
+            <p class="card-subtitle">Watch on Start TVs, Playstation, Xbox, Chromecast, Apple
+                TV,
+                Blu-ray
+                players, and more.</p>
+        </div>
         
-        <!-- Inline video -->
-        <video autoplay playsinline muted loop>
-            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
-                type="video/mp4">
-        </video>
+        <div class="tv-container">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+
+            <!-- Inline video -->
+            <video autoplay playsinline muted loop>
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                    type="video/mp4">
+            </video>
+        </div>
+        
     </div>
 
-    <!-- This is the footer -->
-    <div>
-        <ul>
-            <li>FAQ</li>
-            <li>Help Center</li>
-            <li>Account</li>
-            <li>Media Center</li>
-            <li>Investor Relations</li>
-            <li>Jobs</li>
-            <li>Redeem Gift Cards</li>
-            <li>Buy Gift Cards</li>
-            <li>Ways to Watch</li>
-            <li>Terms of Use</li>
-            <li>Privacy</li>
-            <li>Cookie Preferences</li>
-            <li>Corporate Information</li>
-            <li>Contact Us</li>
-            <li>Speed Test</li>
-            <li>Legal Notices</li>
-            <li>Netflix Originals</li>
-        </ul>
+    <!-- The footer -->
+    <div class="footer">
+        <div class="footer-items">
+            <div class="footer-top">
+                <a href="" class="questions-title">Questions? Contact us.</a>
+            </div>
+            
+            <ul class="footer-links">
+                <li id="faq-item">FAQ</li>
+                <li>Help Centre</li>
+                <li>Account</li>
+                <li>Media Centre</li>
+                <li>Investor Relations</li>
+                <li>Jobs</li>
+                <li>Ways to Watch</li>
+                <li>Terms of Use</li>
+                <li>Privacy</li>
+                <li>Cookie Preferences</li>
+                <li>Corporate Information</li>
+                <li>Contact Us</li>
+                <li>Speed Test</li>
+                <li>Legal Notices</li>
+                <li>Only on Netflix</li>
+            </ul>
+            <div class="language">
+                <!-- Icon: use materializes css icons: https://materializecss.com/icons.html -->
+                <i class="material-icons">language</i> 
+                <select name="languages" id="languages">
+                    <option value="English">English</option>
+                    <option value="Swahili">Swahili</option>
+                </select>
+            </div>
+        </div>
+
     </div>
-    <script>
+    <!-- <script>
             alert("HELLO WORLD");
-    </script>
+    </script> -->
 </body>
 
 
