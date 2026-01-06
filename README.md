@@ -1047,3 +1047,52 @@ h1::after {
     content: "THIS IS A HEADING";
 }
 ```
+
+21. Starting on the Dropdown: Material Icons
+
+e.g.: Use a select HTML tag.
+```
+<select name="languages" id="languages">
+    <option value="english">English</option>
+    <option value="swahili">Swahili</option>
+</select>
+```
+
+22. CSS: Media queries.
+- It uses the @media rule to include the block of CSS properties only if a certain condition is true.
+- Breakpoints:
+ + Desktop: 1200px
+ + Laptop: 1024px
+ + Tablet: 768px
+ + Mobile: 480px
+
+- Media queries most cases:
+ + @media (max-width: 1200px) and (mini-width: 768px) {} - Desktop, Laptop.
+ + @media (max-width: 768px) and (mini-width: 480px) {} - Tablets.
+ + @media (max-width: 480px) {} - Mobile devices.
+
+e.g.:index.html
+```
+
+<body>
+    <div class="test">NOW IN TABLET MODE</div>
+```
+
+style.css:
+```
+.test {
+    display: none;
+}
+```
+
+responsive.css:TABLET MODE
+```
+@media (max-width: 768px) and (min-width: 480px) {
+    .test {
+        width: 100px;
+        height: 50px;
+        display: block;
+        background-color: yellow;
+    }
+}
+```

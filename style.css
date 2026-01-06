@@ -174,3 +174,28 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+
+.language {
+    height: 53px;
+    width: 142px;
+    color: #999999;
+    border: 1px solid #999999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+.language select {
+    padding: 10px;
+    border: none;
+    appearance: none;
+    background: black;
+    color: #999999;
+    background: url(./assets/carrot.png) no-repeat 100%;
+}
+
+.test {
+    display: none;
+}

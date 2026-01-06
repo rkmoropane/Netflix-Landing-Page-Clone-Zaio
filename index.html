@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Netflix</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Netflix Kenya - Watch TV Shows</title>
     <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css"> <!-- Use it for mobile/tablet optimizations, add on more styles to the styles added on top: make sure you order them accordingly -->
+
 </head>
 
 <body>
+    <div class="test">NOW IN TABLET MODE</div>
     <div class="banner-wrap">
         <div class="overlay"></div>
         
@@ -91,6 +95,14 @@
                 <li>Legal Notices</li>
                 <li>Only on Netflix</li>
             </ul>
+            <div class="language">
+                <!-- Icon: use materializes css icons: https://materializecss.com/icons.html -->
+                <i class="material-icons">language</i> 
+                <select name="languages" id="languages">
+                    <option value="English">English</option>
+                    <option value="Swahili">Swahili</option>
+                </select>
+            </div>
         </div>
 
     </div>
