@@ -136,12 +136,38 @@ body {
     position: absolute;
 }
 
+/* FOOTER STYLES */
 .footer {
     background: black;
 }
+.footer-items {
+    margin: 0 47.5px;
+    padding: 70px 45px;
+}
 
-.footer ul li {
+.footer-top {
+    margin-bottom: 30px;
+}
+
+.footer ul li, .questions-title {
     color: #757575;
+}
+
+.footer-links li {
+    font-size: 13px;
+    line-height: 2;
+}
+
+.questions-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-links {
+    list-style-type: none; /* Removes the bullet point for ul li elements */
+    columns: 4;
+    padding: 0;
+
 }
 
 .footer ul li:hover {
