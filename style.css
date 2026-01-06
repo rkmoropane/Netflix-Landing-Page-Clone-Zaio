@@ -30,15 +30,23 @@ body {
     background-position: center;
     height: 100vh;
     border-bottom: 10px solid #222;
+    position: relative;
+    z-index: 1; /*The banner-wrap must appear on top of overlay.*/
+}
+
+.overlay {
+    z-index: -1; /* Overlay: We need to send it back with negative one so that it doesnot appear on top*/
+    height: 100%;
+    width: 100%;
+    background: black;
+    position: absolute; /* This value has disrupted the element flow, it has appeared on top of the banner-wrap. */
+    top: 0;
+    opacity: 60%;
 }
 
 h1 {
     font-size: 3.2rem; /* relative to the root size default value multiply by 3*/
     color: white;
-}
-
-h1::after {
-    content: "THIS IS A HEADING";
 }
 
 .navbar {
@@ -68,7 +76,7 @@ h1::after {
     flex-direction: column; /* The 'justify-content' switch with 'align-items', thus we align flex items using 'align-items' property.*/
     align-items: center;
     justify-content: center;
-    height: 80% ;
+    height: calc(100% - 45px) ; /* We subtract it with the height of the '.navbar' so that we can resolve this issue with the height of the elements - make everything in banner-wrap appear in the center????*/
 }
 
 .info-container {
@@ -79,9 +87,6 @@ h1::after {
     border-bottom: 10px solid #222;
 }
 
-.info-container > p::first-letter {
-    color: red;
-}
 
 .info {
     display: flex;
