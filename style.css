@@ -180,7 +180,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  font-size: calc(18px + 0.3vw);
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -197,10 +197,9 @@ body {
 /* Plus icon */
 .faq-item summary::after {
   content: "+";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1;
-  transition: transform 0.25s ease;
 }
 
 /* Rotate plus when open (becomes ×) */
@@ -213,12 +212,15 @@ body {
   border-top: 2px solid #000;
   padding: 24px;
   margin: 0;
-  font-size: 16px;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
 .faq-content p {
   margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
 }
 
 .faq-content p:last-child {
