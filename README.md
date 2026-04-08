@@ -1099,3 +1099,4 @@ responsive.css:TABLET MODE
 
 ## Certificate:
 ![Netflix Landing Page Certificate](starting-Netflix-landing-page.png)
+![Continueing Netflix Landing Page Certificate](Continueing-Netflix-landing-page.png)
