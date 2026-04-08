@@ -1096,3 +1096,6 @@ responsive.css:TABLET MODE
     }
 }
 ```
+
+## Certificate:
+![Netflix Landing Page Certificate](starting-Netflix-landing-page.png)
